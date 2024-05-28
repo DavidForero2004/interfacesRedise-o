@@ -1,67 +1,226 @@
 @font-face {
     font-family: 'titles';
-   src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'text';
     src: url('../fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype'),
-         url('../fonts/Nunito/Nunito-VariableFont_wght.ttf');
+        url('../fonts/Nunito/Nunito-VariableFont_wght.ttf');
 }
-:root{
+
+:root {
     --color-nav: ;
     --primaryTitle-font: 'titles', sans-serif;
-    --primaryParraf-font: 'text', 'sans-serif'
+    --primaryParraf-font: 'text', 'sans-serif';
+    --orange-color: #f60
 }
-*{
+
+* {
     margin: 0;
 }
-.main{
+
+.main {
     width: 100%;
-    overflow: hidden;
     margin: 0 !important;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: brown;
 }
-.banner{
+
+.banner {
     width: 100%;
     height: 300px;
     background-color: aquamarine;
 }
-.form{
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.form {
     width: 100%;
     height: 400px;
     background-color: bisque;
 }
-.footer{
-    width: 100%;
-    height: 300px;
-    background-color: rgb(67, 100, 100);
-}
-.options{
+
+.options {
     width: 70%;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
-a{
-    text-decoration: none;
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e5357;
+}
+.contain_footer
+{
+    width: 95%;
+    height: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+footer>*{
     color: white;
+}
+footer a{
+    color: var(--orange-color);
+    text-decoration: underline;
+}
+
+
+
+.footer_top{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.leftInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+}
+.leftInfo img{
+    width: 70%;
+    object-fit: cover;
+}
+
+.rightInfo{
+    background-color: #707070;
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+
+}
+.leftInfo p{
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.content_sedes{
+    display: flex;
+    justify-content: space-around;
+}
+.content_sedes h1{
+    color: var(--orange-color);
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.bogota, .villavicencio{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_sedes p{
+    font-weight: 600;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: black;
     font-family: var(--primaryParraf-font);
 }
+.slogan {
+    display: flex;
+    gap: 15px;
+}
+.slogan #log{
+    width: 90px;
+    height: 110px;
+    background-color: black;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.redes h2{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.icons{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.icons i{
+    font-size: 20px;
+}
+.footer_bottom{
+    margin-top: 20px;
+}
+.title h1{
+    color: var(--orange-color);
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.links{
+    display: flex;
+    justify-content: start;
+    gap: 25px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+}
 
-h1{
+.links a:hover{
+    color: var(--orange-color);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+h1 {
     font-family: var(--primaryTitle-font);
     font-weight: bold;
 }
-p{
+
+p {
     font-family: var(--primaryParraf-font);
     font-weight: 200;
 }
