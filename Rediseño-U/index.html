@@ -7,61 +7,65 @@
     <link rel="stylesheet" href="./styles/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
-
 </head>
 
 <body>
     <!-- Prototipo de '' !-->
     <section class="main">
-        <a href="https://wa.me/numero-de-telefono" class="whatsapp-button" target="_blank">
+        <a href="https://wa.me/numero-de-telefono" id="icon-floor" class="whatsapp-button" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
-        
-        <nav class="navbar">
-            <div class="logo">
+        <div class="color-toggle-button" id="changeColor" onclick="toggleColorMode()">
+            <i class="fas fa-adjust"></i>
+        </div>
+        <nav class="navbar" id="nav">
+            <div class="logo" id="logo_initial">
                 <img src="./styles/img/logo_u_compensar.png" alt="/logo">
             </div>
-            <div class="options">
+            <div class="logo" id="logo_change">
+                <img src="./styles/img/Logo blanco.png" alt="/logo">
+            </div>
+            <div class="options" id="options">
                 <a href="">Institución</a>
-                <a href="">Programas</a>
+                <a href="./Programs.html">Programas</a>
                 <a href="">Graduados </a>
-                <a href="">Admisiones </a>
+                <a href="">Admisiones </a>
                 <a href="./testimonios.html">Testimonios</a>
-                <i class="fas fa-search"></i>
+                <i class="fas fa-search" id="i"></i>
             </div>
             <i class="fas fa-bars" id="bars"></i>
         </nav>
         <div class="options_2" id="options_2">
             <a href="">Institución</a>
-            <a href="">Programas</a>
+            <a href="./Programs.html">Programas</a>
             <a href="">Graduados </a>
-            <a href="">Admisiones </a>
-            <a href="">Testimonios</a>
+            <a href="">Admisiones </a>
+            <a href="./testimonios.html">Testimonios</a>
         </div>
         <div class="banner">
-            <img src="" alt="/logo">
+            <img src="styles/img/pixelcut-export (1).jpeg.jpg" alt="/logo">
         </div>
-        <div class="oferta">
-            <h1>Oferta Educativa</h1>
+        <div class="oferta" >
+            <h1 id="title-change">Oferta Educativa</h1>
             <div class="options_ofertas">
                 <div class="card_ofert" id="op_1">
-                    <a href="">option</a>
+                    <a href="">Técnico laboral</a>
                 </div>
                 <div class="card_ofert" id="op_2">
-                    <a href="">option</a>
+                    <a href="" >SENA</a>
                 </div>
                 <div class="card_ofert" id="op_3">
-                    <a href="">option</a>
+                    <a href="">Pregrado</a>
                 </div>
                 <div class="card_ofert" id="op_4">
-                    <a href="">option</a>
+                    <a href="">Postgrado</a>
                 </div>
                 <div class="card_ofert" id="op_5">
-                    <a href="">option</a>
+                    <a href="">Educación continuada</a>
                 </div>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer" id="nav">
             <div class="contain_footer">
                 <div class="footer_top">
                     <div class="leftInfo">
@@ -70,29 +74,28 @@
                             de julio 2020. – VIGILADA MINEDUCACIÓN</p>
                         <p>Para requerimientos de autoridades, tutelas o notificaciones judiciales por favor dirigirse
                             al correo:</p>
-                        <a href="">notificacionesjudiciales@ucompensar.edu.co</a>
+                        <a href="" id="title-change">notificacionesjudiciales@ucompensar.edu.co</a>
                         <div class="redes">
-                            <h2>Síguenos en nuestras redes:</h2>
+                            <h2 id="title-change">Síguenos en nuestras redes:</h2>
                             <div class="icons">
                                 <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
                                 <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                                 <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
                                 <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
-
                             </div>
                         </div>
                     </div>
                     <div class="rightInfo">
                         <div class="content_sedes">
                             <div class="bogota">
-                                <h1>Bogotá</h1>
+                                <h1 id="title-change">Bogotá</h1>
                                 <p>Sede principal</p>
                                 <p>Avenida (Calle) 32 No. 17 – 30</p>
                                 <p>Teléfono: 601 338 06 66</p>
                             </div>
                             <div class="villavicencio">
-                                <h1>Villavicencio</h1>
+                                <h1 id="title-change">Villavicencio</h1>
                                 <p>Sede Cofrem</p>
                                 <p>Carrera 35 No. 20A-02</p>
                                 <p>Vía Catama (antes del Colegio Cofrem)</p>
@@ -114,8 +117,8 @@
                 </div>
                 <hr>
                 <div class="footer_bottom">
-                    <div class="title">
-                        <h1>links importantes</h1>
+                    <div class="title" id="title-change">
+                        <h1 id="title-change">links importantes</h1>
                     </div>
                     <div class="links">
                         <a href="">Documentos de Interés</a>

@@ -35,8 +35,6 @@
 
 .banner {
     width: 100%;
-    height: 300px;
-    background-color: aquamarine;
 }
 
 .banner img {
@@ -353,6 +351,9 @@ p {
     margin-bottom: 15px;
 }
 .whatsapp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -368,7 +369,8 @@ p {
 }
 
 .whatsapp-button:hover {
-    background-color: #128C7E;
+    background-color: #25D366;
+    transition: 0.5s;
 }
 
 
@@ -643,6 +645,15 @@ p {
         text-decoration: underline;
         transition: 0.3s;
     }
+    .slogan #log {
+        width: 90px;
+        height: 150px;
+    }
+    .slogan img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 @media screen and (min-width: 521px) and (max-width: 768px) {
@@ -777,6 +788,15 @@ p {
         text-decoration: underline;
         transition: 0.3s;
     }
+    .slogan #log {
+        width: 90px;
+        height: 150px;
+    }
+    .slogan img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -841,4 +861,77 @@ p {
     .logo{
         width: 20%;
     }
+}
+.banner img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+.color-toggle-button{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    /* bottom: 10px; */
+    right: 20px;
+    background-color: #fff;
+    /* color: white; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* text-align: center; */
+    font-size: 30px;
+    box-shadow: 2px 2px 5px rgb(58 58 58 / 68%);
+    z-index: 1015;
+    top: 50%;
+}
+
+/* Estilos para el modo de colores daltónicos */
+.color-blind-mode {
+    background-color:  #6b6b6b; /* Color de fondo accesible */
+    color: #0056b3; /* Color de texto accesible */
+}
+
+/* Puedes agregar más estilos para elementos específicos si es necesario */
+.color-blind-mode .some-element {
+    color: #0056b3;
+}
+
+
+.title-daltonic{
+   color: rgb(0, 0, 211) !important;
+}
+
+.title-daltonic2{
+    color: rgb(0, 0, 211) !important;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black
+ }
+.title-daltonic a:hover {
+    color: rgb(0, 0, 211) !important;
+    text-decoration: underline;
+    transition: 5s;
+}
+
+.icon-change{
+    color: rgb(0, 0, 211) !important;
+}
+.icon-w{
+    background-color: rgba(0, 0, 211, 0.705) !important;
+}
+#logo_change{
+    display: none;
+}
+.logo_changeShow{
+    display: flex !important;
+}
+.logo_changeHide{
+    display: none !important;
+}
+.backgroundN{
+    background-color: #585858;
+}
+
+.darkimg{
+    filter: brightness(70%);
 }
