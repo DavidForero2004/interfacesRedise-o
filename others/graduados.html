@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/css/styles.css">
+    <link rel="stylesheet" href="../styles/css/graduados.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"  rel="stylesheet"  />
+    <title>Graduados</title>
+</head>
+<body>
+    <section class="main">
+        <nav class="navbar" id="nav">
+            <div class="logo" id="logo_initial">
+                <img src="../styles/img/logo_u_compensar.png" alt="/logo">
+            </div>
+            <div class="logo" id="logo_change">
+                <img src="./styles/img/Logo blanco.png" alt="/logo">
+            </div>
+            <div class="options" id="options">
+                <a href="">Institución</a>
+                <a href="./Programs.html">Programas</a>
+                <a href="">Graduados </a>
+                <a href="">Admisiones </a>
+                <a href="./testimonios.html">Testimonios</a>
+                <a href="../index.html">Inicio</a>
+                <i class="fas fa-search" id="i"></i>
+            </div>
+            <i class="fas fa-bars" id="bars"></i>
+        </nav>
+        <div class="options_2" id="options_2">
+            <a href="">Institución</a>
+            <a href="./Programs.html">Programas</a>
+            <a href="">Graduados </a>
+            <a href="">Admisiones </a>
+            <a href="./testimonios.html">Testimonios</a>
+            <a href="../index.html">Inicio</a>
+        </div>
+        <div class="banner">
+            <img src="../styles/img/Banner_Egresados.png" alt="Banner Egresados">
+            <h1>Graduados<br>Fundación Universitaria Compensar</h1>
+        </div>
+        <br>
+        <div class="graduados-section">
+            <h1>Nuestro Objetivo</h1>
+            <p>En nuestra institución educativa, nos comprometemos a proporcionar una educación integral y de alta calidad que prepare a nuestros estudiantes para enfrentar los desafíos del mundo moderno. Nuestro objetivo principal es formar graduados de la universidad que sean competentes en sus campos de estudio y que, además, posean un profundo compromiso con la sociedad y los valores éticos.</p>
+            <ul>
+                <li><strong>Excelencia Académica:</strong> Nos esforzamos por garantizar que nuestros estudiantes adquieran conocimientos sólidos y actualizados en sus respectivas disciplinas. Fomentamos la investigación, la innovación y el pensamiento crítico, asegurando que nuestros graduados estén preparados para contribuir significativamente en sus áreas profesionales.</li>
+                <li><strong>Desarrollo de Habilidades Profesionales:</strong> Reconocemos la importancia de las habilidades prácticas y profesionales en el mundo laboral actual. Por ello, incorporamos programas de prácticas, proyectos colaborativos con la industria y talleres especializados que equipan a nuestros estudiantes con las competencias necesarias para destacarse en sus carreras.</li>
+                <li><strong>Compromiso Ético y Social:</strong> Más allá del conocimiento técnico, valoramos profundamente la formación de individuos con altos estándares éticos y un fuerte sentido de responsabilidad social. Promovemos la participación en actividades comunitarias, el voluntariado y la conciencia social, formando graduados que se preocupen por el bienestar de sus comunidades y el medio ambiente.</li>
+                <li><strong>Desarrollo Personal y Liderazgo:</strong> Creemos en la importancia del crecimiento personal y el desarrollo de habilidades de liderazgo. Ofrecemos una variedad de actividades extracurriculares, programas de mentoría y oportunidades de liderazgo que ayudan a nuestros estudiantes a convertirse en individuos seguros, resilientes y capaces de guiar a otros.</li>
+            </ul>
+            <h1 class="centered-text">︿︿︿︿︿︿︿︿︿︿︿︿︿︿︿Graduados︿︿︿︿︿︿︿︿︿︿︿︿︿︿︿</h1>
+            <div class="carousel">
+                <button class="slick-arrow slick-prev" id="button-prev" onclick="moveSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slick-track" id="track">
+                    <div class="slick"><img src="../styles/img/egresado1.jpg" alt="Imagen 1"></div>
+                    <div class="slick"><img src="../styles/img/egresado2.jpg" alt="Imagen 2"></div>
+                    <div class="slick"><img src="../styles/img/egresado3.jpg" alt="Imagen 3"></div>
+                    <div class="slick"><img src="../styles/img/egresado5.jpg" alt="Imagen 4"></div>
+                    <div class="slick"><img src="../styles/img/egresado1.jpg" alt="Imagen 1"></div>
+                    <div class="slick"><img src="../styles/img/egresado2.jpg" alt="Imagen 2"></div>
+                    <div class="slick"><img src="../styles/img/egresado3.jpg" alt="Imagen 3"></div>
+                    <div class="slick"><img src="../styles/img/egresado5.jpg" alt="Imagen 4"></div>
+                </div>
+                
+                <button class="slick-arrow slick-next" id="button-next" onclick="moveSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="educacion">
+        <h1>¡Lidera tu mundo laboral!</h1>
+        <h2>Sigue tus estudios en la Fundacion Universitaria Compensar con el 20% de descuento. <br>¡Conoce mas<a href="Aqui"> Aqui!</a>.</h2>
+        <div class="continua">
+            <div class="imagen-contenedor">
+                <img src="../styles/img/egresado1.jpg" alt="Imagen 1" class="imagen">
+                <div class="texto-hover"><h1>Posgrados</h1></div>
+            </div>
+            <div class="imagen-contenedor">
+                <img src="../styles/img/egresado2.jpg" alt="Imagen 2" class="imagen">
+                <div class="texto-hover"><h1>Doble Titulacion</h1></div>
+            </div>
+            <div class="imagen-contenedor">
+                <img src="../styles/img/egresado3.jpg" alt="Imagen 3" class="imagen">
+                <div class="texto-hover"><h1>Educacion Continua</h1></div>
+            </div>
+        </div>
+        
+        
+    </section>
+    <footer class="footer">
+        <div class="contain_footer">
+            <div class="footer_top">
+                <div class="leftInfo">
+                    <img src="../styles/img/Logo blanco.png" alt="/logo">
+                    <p>Fundación Universitaria Compensar P.J. Resolución 23635 del 23 diciembre 1981 | 12455 del 9
+                        de julio 2020. – VIGILADA MINEDUCACIÓN</p>
+                    <p>Para requerimientos de autoridades, tutelas o notificaciones judiciales por favor dirigirse
+                        al correo:</p>
+                    <a href="">notificacionesjudiciales@ucompensar.edu.co</a>
+                    <div class="redes">
+                        <h2>Síguenos en nuestras redes:</h2>
+                        <div class="icons">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="rightInfo">
+                    <div class="content_sedes">
+                        <div class="bogota">
+                            <h1>Bogotá</h1>
+                            <p>Sede principal</p>
+                            <p>Avenida (Calle) 32 No. 17 – 30</p>
+                            <p>Teléfono: 601 338 06 66</p>
+                        </div>
+                        <div class="villavicencio">
+                            <h1>Villavicencio</h1>
+                            <p>Sede Cofrem</p>
+                            <p>Carrera 35 No. 20A-02</p>
+                            <p>Vía Catama (antes del Colegio Cofrem)</p>
+                            <p>Teléfono: 608 681 86 40</p>
+                        </div>
+                        <div class="slogan">
+                            <div id="log">
+                                <img src="../styles/img/iso_9001.png" alt="p">
+                            </div>
+                            <div id="log">
+                                 <img src="../styles/img/iso_9001.png" alt="p">
+                            </div>
+                            <div id="log">
+                                 <img src="../styles/img/iso_9001.png" alt="p">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_bottom">
+                <div class="title">
+                    <h1>links importantes</h1>
+                </div>
+                <div class="links">
+                    <a href="">Documentos de Interés</a>
+                    <a href="">Régimen Tributario Especial</a>
+                    <a href="">Radica tus PQRSF ​AQUÍ</a>
+                    <a href="">Preguntas Frecuentes</a>
+                    <a href="">Derechos Pecuniarios</a>
+                    <a href="">Estatutos</a>
+                    <a href="">Tratamiento de datos personales</a>
+                    <a href="">Reglamento estudiantes</a>
+                    <a href="">Reglamento del profesorado</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+    <script src="../styles/js/styles.js"></script>
+
+    
+</body>
+</html>

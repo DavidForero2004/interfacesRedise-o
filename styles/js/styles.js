@@ -32,3 +32,29 @@ function toggleColorMode() {
         image.classList.toggle('darkimg');
     });
 }
+
+let currentSlide = 0;
+
+function moveSlide(direction) {
+    const track = document.getElementById('track');
+    const slides = track.querySelectorAll('.slick');
+    const totalSlides = slides.length;
+
+    // Calculate the number of slides visible at a time
+    const visibleSlides = 4;
+    const maxIndex = totalSlides - visibleSlides;
+
+    // Update current slide index based on direction
+    currentSlide += direction;
+    if (currentSlide < 0) {
+        currentSlide = maxIndex;
+    } else if (currentSlide > maxIndex) {
+        currentSlide = 0;
+    }
+
+    // Move the track
+    const slideWidth = slides[0].offsetWidth;
+    track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}
+
+
