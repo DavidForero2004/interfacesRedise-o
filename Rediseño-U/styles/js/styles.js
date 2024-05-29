@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
-  });
+const bars = document.getElementById("bars");
+const menuHamb = document.getElementById("options_2");
+
+bars.addEventListener('click', () => {
+    menuHamb.classList.toggle('show');
+});

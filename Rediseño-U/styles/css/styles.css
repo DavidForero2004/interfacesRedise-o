@@ -68,6 +68,33 @@
     margin-right: 15px;
 }
 
+.options_2 {
+    display: none;
+    opacity: 1;
+    /* También puedes añadir otros estilos de transición aquí */
+    transition: opacity 10s;
+    /* Transición de desvanecimiento de 0.3 segundos */
+}
+
+nav .options a {
+    font-family: var(--primaryParraf-font);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+nav .options a:hover {
+    color: var(--orange-color);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+nav .options i {
+    color: var(--orange-color);
+}
+
+#bars {
+    display: none;
+}
 
 .footer {
     width: 100%;
@@ -76,25 +103,27 @@
     align-items: center;
     background-color: #4e5357;
 }
-.contain_footer
-{
+
+.contain_footer {
     width: 95%;
     height: 100%;
     margin: 20px;
     display: flex;
     flex-direction: column;
 }
-footer>*{
+
+footer>* {
     color: white;
 }
-footer a{
+
+footer a {
     color: var(--orange-color);
     text-decoration: underline;
 }
 
 
 
-.footer_top{
+.footer_top {
     width: 100%;
     padding: 5px;
     display: flex;
@@ -102,113 +131,132 @@ footer a{
     gap: 50px;
     margin-bottom: 20px;
 }
-.leftInfo{
+
+.leftInfo {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 35%;
 }
-.leftInfo img{
+
+.leftInfo img {
     width: 70%;
     object-fit: cover;
 }
 
-.rightInfo{
+.rightInfo {
     background-color: #707070;
     border-radius: 15px;
     padding: 20px;
     width: 60%;
 
 }
-.leftInfo p{
+
+.leftInfo p {
     font-weight: 600;
     font-size: 12px;
     letter-spacing: 1px;
 }
-.content_sedes{
+
+.content_sedes {
     display: flex;
     justify-content: space-around;
 }
-.content_sedes h1{
+
+.content_sedes h1 {
     color: var(--orange-color);
     font-size: 21px;
     font-weight: 500;
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
-.bogota, .villavicencio{
+
+.bogota,
+.villavicencio {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.content_sedes p{
+.content_sedes p {
     font-weight: 600;
     font-size: 12px;
 }
+
 a {
     text-decoration: none;
     color: black;
     font-family: var(--primaryParraf-font);
 }
+
 .slogan {
     display: flex;
     gap: 15px;
 }
-.slogan #log{
+
+.slogan #log {
     width: 90px;
     height: 110px;
-    background-color: black;
 }
-.redes{
+
+.redes {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.redes h2{
+
+.redes h2 {
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
 }
-.icons{
+
+.icons {
     display: flex;
     justify-content: start;
     gap: 10px;
 }
-.icons a{
+
+.icons a {
     text-decoration: none;
     color: white;
 }
-.icons i{
+
+.icons i {
     font-size: 20px;
 }
-.footer_bottom{
+
+.footer_bottom {
     margin-top: 20px;
 }
-.title h1{
+
+.title h1 {
     color: var(--orange-color);
     font-size: 21px;
     font-weight: 500;
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
-.links{
+
+.links {
     display: flex;
     justify-content: start;
     gap: 25px;
 }
-.links a{
+
+.links a {
     text-decoration: none;
     color: white;
     font-size: 14px;
     font-weight: 400;
 }
 
-.links a:hover{
+.links a:hover {
     color: var(--orange-color);
     text-decoration: underline;
     transition: 0.5s;
 }
+
 h1 {
     font-family: var(--primaryTitle-font);
     font-weight: bold;
@@ -218,304 +266,560 @@ p {
     font-family: var(--primaryParraf-font);
     font-weight: 200;
 }
-/*section form*/
-.form {
+
+/*oferta*/
+.oferta {
     width: 100%;
-    height: auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
     gap: 10px;
 }
-.form_data{
-    padding: 5px;
-    box-sizing: border-box;
+
+.options_ofertas {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
 }
-.form_data h1{
-    font-size: 1.2em;
-    margin: 0;
-}
-.form_data p{
-    font-size: 12px;
-}
-.data_{
+
+.card_ofert {
+    width: 18%;
+    height: 350px;
     display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.input_form{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 45%;
-    margin-top: 0 !important;
+    align-items: center;
+    border-radius: 5px;
 }
-.input_form_ckeck{
-   margin-top: 0 !important;
+
+.card_ofert a {
+    color: white;
+    font-family: var(--primaryParraf-font);
+    font-weight: bold;
 }
-.input_form_ckeck label{
-    font-size: 12px;
+
+.card_ofert:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card_ofert:hover a {
+    color: var(--orange-color);
+    transition: 0.3s;
+}
+
+#op_1 {
+    background-image: url('../img/Educacion\ Complementaria.png');
+    background-size: cover;
+    background-position: top;
+}
+
+#op_2 {
+    background-image: url('../img/Posgrado.png');
+    /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: top;
+}
+
+#op_3 {
+    background-image: url('../img/pregado.jpeg');
+    /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+#op_4 {
+    background-image: url('../img/Sena.png');
+    /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+#op_5 {
+    background-image: url('../img/Tecnico\ laboralU.png');
+    /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+.oferta h1 {
+    font-family: var(--primaryTitle-font);
+    font-weight: bold;
+    color: var(--orange-color);
+    font-size: 21px;
+    margin-bottom: 15px;
 }
 
 @media screen and (min-width: 200px) and (max-width: 320px) {
-    .contain_footer{
+    .contain_footer {
         width: 100%;
         box-sizing: border-box;
     }
-    .footer{
+
+    .footer {
         box-sizing: border-box;
         padding: 10px;
     }
-    .footer_top{
+
+    .footer_top {
         display: flex;
         flex-direction: column;
         padding: 0;
     }
-    .leftInfo, .rightInfo {
+
+    .leftInfo,
+    .rightInfo {
         width: 100%;
     }
-    .leftInfo img{
+
+    .leftInfo img {
         width: 100%;
     }
+
     .leftInfo p {
         font-size: 12px;
         line-height: 22px;
         padding-right: 20px;
         text-align: left;
     }
-    .leftInfo a{
+
+    .leftInfo a {
         font-size: 12px;
     }
-    .redes{
+
+    .redes {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
-       
+
     }
-    .rightInfo{
+
+    .rightInfo {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
         padding: 20px;
         box-shadow: 5px 5px 10px #3f3f3f;
     }
-    .content_sedes{
+
+    .content_sedes {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
-    .content_sedes h1{
+
+    .content_sedes h1 {
         margin-bottom: 5px;
     }
-    #log{
+
+    #log {
         width: 30% !important;
     }
-    hr{
+
+    hr {
         display: none;
     }
-    .links{
+
+    .links {
         display: flex;
         flex-direction: column;
     }
-    .links a{
+
+    .links a {
         font-size: 12.5px;
+    }
+
+    /*oferta*/
+    .oferta {
+        padding: 10px;
+    }
+
+    .options_ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card_ofert {
+        width: 100%;
+        height: 250px;
+    }
+
+    .options {
+        display: none;
+    }
+
+    #bars {
+        display: block;
+        font-size: 25px;
+        margin-right: 15px;
+        color: var(--orange-color);
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .show {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid var(--orange-color);
+        border-bottom: 1px solid var(--orange-color);
+        padding: 15px;
+        gap: 15px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        opacity: 1;
+    }
+
+    .options_2 a {
+        font-size: 12px;
+        font-family: var(--primaryParraf-font);
+        font-weight: 600;
+    }
+
+    .options_2 a:hover {
+        color: var(--orange-color);
+        text-decoration: underline;
+        transition: 0.3s;
     }
 }
 
 @media screen and (min-width: 321px) and (max-width: 520px) {
-    .contain_footer{
+    .contain_footer {
         width: 100%;
         box-sizing: border-box;
         margin: 10px;
     }
-    .footer{
+
+    .footer {
         box-sizing: border-box;
         padding: 10px;
     }
-    .footer_top{
+
+    .footer_top {
         display: flex;
         flex-direction: column;
         padding: 0;
         gap: 30px;
     }
-    .leftInfo, .rightInfo {
+
+    .leftInfo,
+    .rightInfo {
         width: 100%;
     }
-    .leftInfo img{
+
+    .leftInfo img {
         width: 70%;
     }
+
     .leftInfo p {
         font-size: 13px;
         line-height: 22px;
         padding-right: 20px;
         text-align: left;
     }
-    .leftInfo a{
+
+    .leftInfo a {
         font-size: 13px;
     }
-    .redes{
+
+    .redes {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
-       
+
     }
-    .rightInfo{
+
+    .rightInfo {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
         padding: 20px;
         box-shadow: 5px 5px 10px #3f3f3f;
     }
-    .content_sedes{
+
+    .content_sedes {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
-    .content_sedes h1{
+
+    .content_sedes h1 {
         margin-bottom: 5px;
     }
-    #log{
+
+    #log {
         width: 30% !important;
     }
-    hr{
+
+    hr {
         display: none;
     }
-    .links{
+
+    .links {
         display: flex;
         flex-direction: column;
     }
-    .links a{
+
+    .links a {
         font-size: 13.5px;
+    }
+
+    /*oferta*/
+    .oferta {
+        padding: 10px;
+    }
+
+    .options_ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card_ofert {
+        width: 100%;
+        height: 250px;
+    }
+    .options {
+        display: none;
+    }
+
+    #bars {
+        display: block;
+        font-size: 25px;
+        margin-right: 15px;
+        color: var(--orange-color);
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .show {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid var(--orange-color);
+        border-bottom: 1px solid var(--orange-color);
+        padding: 15px;
+        gap: 15px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        opacity: 1;
+    }
+
+    .options_2 a {
+        font-size: 12px;
+        font-family: var(--primaryParraf-font);
+        font-weight: 600;
+    }
+
+    .options_2 a:hover {
+        color: var(--orange-color);
+        text-decoration: underline;
+        transition: 0.3s;
     }
 }
 
-@media screen and (min-width: 521px) and (max-width: 768px){
-    .contain_footer{
+@media screen and (min-width: 521px) and (max-width: 768px) {
+    .contain_footer {
         width: 100%;
         box-sizing: border-box;
         margin: 10px;
     }
-    .footer{
+
+    .footer {
         box-sizing: border-box;
         padding: 10px;
     }
-    .footer_top{
+
+    .footer_top {
         display: flex;
         flex-direction: column;
         padding: 0;
         gap: 30px;
     }
-    .leftInfo, .rightInfo {
+
+    .leftInfo,
+    .rightInfo {
         width: 100%;
     }
-    .leftInfo img{
+
+    .leftInfo img {
         width: 60%;
     }
+
     .leftInfo p {
         font-size: 14px;
         line-height: 22px;
         padding-right: 20px;
         text-align: left;
     }
-    .leftInfo a{
+
+    .leftInfo a {
         font-size: 14px;
     }
-    .redes{
+
+    .redes {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
-       
+
     }
-    .rightInfo{
+
+    .rightInfo {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
         padding: 20px;
         box-shadow: 5px 5px 10px #3f3f3f;
     }
-    .content_sedes{
+
+    .content_sedes {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
-    .content_sedes h1{
+
+    .content_sedes h1 {
         margin-bottom: 5px;
         font-size: 22px;
     }
-    #log{
+
+    #log {
         width: 30% !important;
     }
-    hr{
+
+    hr {
         display: none;
     }
-    .links{
+
+    .links {
         display: flex;
         flex-direction: column;
     }
-    .links a{
+
+    .links a {
         font-size: 14px;
     }
-    .redes h2{
+
+    .redes h2 {
         font-size: 20px;
     }
-    .content_sedes p{
+
+    .content_sedes p {
         font-size: 14.5px;
     }
-    .title h1{
-        font-size: 22px ;
+
+    .title h1 {
+        font-size: 22px;
+    }
+    .options {
+        display: none;
+    }
+
+    #bars {
+        display: block;
+        font-size: 25px;
+        margin-right: 15px;
+        color: var(--orange-color);
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .show {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid var(--orange-color);
+        border-bottom: 1px solid var(--orange-color);
+        padding: 15px;
+        gap: 15px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        opacity: 1;
+    }
+
+    .options_2 a {
+        font-size: 12px;
+        font-family: var(--primaryParraf-font);
+        font-weight: 600;
+    }
+
+    .options_2 a:hover {
+        color: var(--orange-color);
+        text-decoration: underline;
+        transition: 0.3s;
     }
 }
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .contain_footer{ 
+    .contain_footer {
         box-sizing: border-box;
     }
-    .footer_top{
+
+    .footer_top {
         box-sizing: border-box;
         gap: 25px;
 
     }
-    .leftInfo{
+
+    .leftInfo {
         width: 50%;
     }
-    .leftInfo img{
+
+    .leftInfo img {
         width: 100%;
     }
-    .leftInfo p, a{
+
+    .leftInfo p,
+    a {
         line-height: 2;
         font-size: 14px;
     }
-    .icons{
+
+    .icons {
         gap: 5px;
     }
-    .rightInfo{
+
+    .rightInfo {
         width: 50%;
         box-sizing: border-box;
         padding: 15px;
     }
-    .content_sedes{
+
+    .content_sedes {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
-    .content_sedes h1{
+
+    .content_sedes h1 {
         margin-bottom: 5px;
     }
+
     .content_sedes p {
         font-weight: 600;
         font-size: 14px;
     }
-    .links{
+
+    .links {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
     }
-    .links a{
+
+    .links a {
         font-size: 12px;
+    }
+    .logo{
+        width: 20%;
     }
 }
