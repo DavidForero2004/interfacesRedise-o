@@ -60,12 +60,6 @@
     object-fit: contain;
 }
 
-.form {
-    width: 100%;
-    height: 400px;
-    background-color: bisque;
-}
-
 .options {
     width: 70%;
     display: flex;
@@ -224,7 +218,47 @@ p {
     font-family: var(--primaryParraf-font);
     font-weight: 200;
 }
-
+/*section form*/
+.form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}
+.form_data{
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.form_data h1{
+    font-size: 1.2em;
+    margin: 0;
+}
+.form_data p{
+    font-size: 12px;
+}
+.data_{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.input_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    margin-top: 0 !important;
+}
+.input_form_ckeck{
+   margin-top: 0 !important;
+}
+.input_form_ckeck label{
+    font-size: 12px;
+}
 
 @media screen and (min-width: 200px) and (max-width: 320px) {
     .contain_footer{
